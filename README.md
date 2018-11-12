@@ -2,7 +2,7 @@
 
 ## Features
  - Actually crawls webpages like Google would
- - Generates a seperate XML file which gets updated every time the script gets executed (Runnable via CRON)
+ - Generates a seperate JOSN file which gets updated every time the script gets executed (Runnable via CRON)
  - Awesome for SEO
  - Crawls faster than online services
  - Verbose logging
@@ -32,9 +32,9 @@ Sometimes you need to run the script for a large number of domains (If you are a
 
 ## Basic usage
 
-Scan `http://www.mywebsite.com/` and output the sitemap to `/home/user/public_html/sitemap.xml`:
+Scan `http://www.mywebsite.com/` and output the sitemap to `/home/user/public_html/file.json`:
 
-`php sitemap.php file=/home/user/public_html/sitemap.xml site=http://www.mywebsite.com/`
+`php sitemap.php file=/home/user/public_html/file.json site=http://www.mywebsite.com/`
 
 ## Advanced usage
 
@@ -56,22 +56,13 @@ Next, let's tackle the `$debug` variable. All the same concepts apply but the sy
 
 ## Running Tests
 
-# Acknowledgements
-
-This section is devoted as a *thank you* for everybody who helped create this script.
-
-[Richard Leishman](https://github.com/mrl22) and [Web Forward](http://www.webfwd.co.uk/) for the regex at the heart of the script.  
-[Anatoli Nicolae](https://github.com/anatolinicolae) for fixing a bug in the regex  
-[Mario Bouchard](https://github.com/mbouchard) for fixing #32 and #35 with his first pull request  
-[Santeri Kannisto](https://github.com/2globalnomads) from [2 Global Nomads](https://www.2globalnomads.info/) for a number of features and many, many bug reports
-
 
 # License
 
 ```
 MIT License
 
-Copyright (c) 2017 Slava Knyazev <slava@knyz.org>
+Copyright (c) 2018 Lilian Séon <seonlilian.fr>
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
