@@ -24,7 +24,7 @@ It is recommended you don't remove the above for future reference.
 */
 
 // Default site to crawl
-$site = "http://seonlilian.fr";
+$site = "http://exemple.com";
 
 //Json filename
 $fileJSON = "file.json";
